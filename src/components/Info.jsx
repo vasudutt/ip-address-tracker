@@ -14,7 +14,7 @@ function Info({userData, setFormInput}) {
 		} else {
 			timezone.current = `UTC ${userData.time_zone.offset}`;
 		}
-	}, []);
+	}, [userData]);
 
 	const handleChange = (e) => {
 		setInput(e.target.value);
